@@ -1,0 +1,88 @@
+{
+  "project": {
+    "title": "DengueOps AI",
+    "subtitle": "Simulation-Based Dengue Surge Preparedness Decision Support for Dhaka South",
+    "track": "Health Data Analytics & Predictive Systems",
+    "conference": "IEEE ICADHI",
+    "mode": "Synthetic Demonstration Dataset",
+    "last_updated": "2026-05-23T17:33:49",
+    "data_status": "No patient-level data used. All readiness values are synthetic."
+  },
+  "headline_metrics": {
+    "forecast_cases": 234,
+    "growth_factor": 1.498,
+    "risk_level": "Moderate",
+    "risk_score": 60,
+    "target_epi_week": 24,
+    "target_epi_year": 2026,
+    "highest_priority_zone": "Kamrangirchar",
+    "highest_pressure_facility": "Kamrangirchar 31-Bed Hospital",
+    "critical_supply_alerts": 0,
+    "facilities_with_expected_bed_gap": 5,
+    "total_facilities": 11,
+    "total_public_government_anchors": 5,
+    "critical_priority_zones": 1
+  },
+  "uncertainty": {
+    "best_case": {
+      "label": "Best Case",
+      "forecast_cases": 166,
+      "growth_factor": 1.063,
+      "risk_score": 34,
+      "risk_level": "Low"
+    },
+    "expected_case": {
+      "label": "Expected Case",
+      "forecast_cases": 234,
+      "growth_factor": 1.498,
+      "risk_score": 60,
+      "risk_level": "Moderate"
+    },
+    "worst_case": {
+      "label": "Worst Case",
+      "forecast_cases": 302,
+      "growth_factor": 1.933,
+      "risk_score": 82,
+      "risk_level": "High"
+    },
+    "method": {
+      "type": "rmse_error_band",
+      "source": "time_based_backtest",
+      "model": "GradientBoostingRegressor",
+      "rmse": 67.8,
+      "uncertainty_pct": 29.0,
+      "note": "Prototype uncertainty band derived from validation RMSE; not a calibrated probabilistic interval."
+    },
+    "method_note": "RMSE-derived prototype uncertainty band (forecast ± validation RMSE). Not a calibrated probabilistic interval. Band width: ±67.8 cases (29.0% of forecast)."
+  },
+  "model_evidence": {
+    "best_model": "gradient_boosting",
+    "best_model_display": "Gradient Boosting Regressor",
+    "best_model_reason": "Lowest MAE and RMSE under time-based chronological validation.",
+    "validation_design": "time_based_holdout_final_20_percent",
+    "train_rows": 96,
+    "test_rows": 25,
+    "gbr_mae": 46.96,
+    "gbr_rmse": 67.8,
+    "mae_reduction_vs_naive_pct": 68.5,
+    "mae_reduction_vs_moving_average_pct": 79.0,
+    "disclaimer": "Validation is performed on synthetic data. Results demonstrate prototype pipeline correctness, not real-world accuracy."
+  },
+  "operational_summary": {
+    "total_recommendations": 22,
+    "critical_priority_zones": 1,
+    "facilities_with_expected_bed_gap": 5,
+    "facilities_with_worst_case_bed_gap": 8,
+    "critical_supply_alerts": 0,
+    "highest_priority_zone": "Kamrangirchar",
+    "highest_pressure_facility": "Kamrangirchar 31-Bed Hospital"
+  },
+  "ethics_and_assumptions": [
+    "Prototype uses aggregated/synthetic data only.",
+    "No patient-level data is collected or processed.",
+    "Real facility names (DMCH, SSMC, Mugda, NIBPS) are used as public-sector anchor profiles only. Bed, stock, and readiness values are synthetic.",
+    "Facility stock and bed readiness values are synthetic demonstration values.",
+    "Spatial case allocation is a heuristic; zone-level counts are not precision estimates.",
+    "Outputs are advisory and require human review before any operational action."
+  ]
+}

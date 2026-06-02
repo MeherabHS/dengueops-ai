@@ -1,0 +1,274 @@
+{
+  "target": "target_cases_next_2w",
+  "validation_design": "time_based_holdout_final_20_percent",
+  "train_rows": 96,
+  "test_rows": 25,
+  "train_period": {
+    "epi_year_start": 2024,
+    "epi_week_start": 6,
+    "epi_year_end": 2025,
+    "epi_week_end": 49
+  },
+  "test_period": {
+    "epi_year_start": 2025,
+    "epi_week_start": 50,
+    "epi_year_end": 2026,
+    "epi_week_end": 22
+  },
+  "metrics": {
+    "naive": {
+      "mae": 148.96,
+      "rmse": 351.47,
+      "mape": 214.31
+    },
+    "moving_average": {
+      "mae": 223.66,
+      "rmse": 422.5,
+      "mape": 337.38
+    },
+    "gradient_boosting": {
+      "mae": 46.96,
+      "rmse": 67.8,
+      "mape": 40.52
+    }
+  },
+  "best_model": "gradient_boosting",
+  "gbr_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "min_samples_leaf": 3,
+    "subsample": 0.8,
+    "random_state": 42
+  },
+  "feature_count": 18,
+  "features_used": [
+    "rainfall_lag_2w",
+    "rainfall_lag_4w",
+    "temp_lag_2w",
+    "temp_lag_4w",
+    "humidity_lag_2w",
+    "humidity_lag_4w",
+    "cases_lag_1w",
+    "cases_lag_2w",
+    "cases_lag_4w",
+    "cases_rolling_3w",
+    "cases_rolling_4w",
+    "cases_rolling_8w",
+    "growth_rate_1w",
+    "growth_rate_2w",
+    "epi_week_sin",
+    "epi_week_cos",
+    "monsoon_flag",
+    "post_monsoon_flag"
+  ],
+  "actual_vs_predicted": [
+    {
+      "epi_year": 2025,
+      "epi_week": 50,
+      "actual": 954,
+      "naive_pred": 1143,
+      "moving_average_pred": 1159,
+      "ml_pred": 952
+    },
+    {
+      "epi_year": 2025,
+      "epi_week": 51,
+      "actual": 63,
+      "naive_pred": 1225,
+      "moving_average_pred": 1203,
+      "ml_pred": 209
+    },
+    {
+      "epi_year": 2025,
+      "epi_week": 52,
+      "actual": 61,
+      "naive_pred": 993,
+      "moving_average_pred": 1157,
+      "ml_pred": 82
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 1,
+      "actual": 57,
+      "naive_pred": 954,
+      "moving_average_pred": 1079,
+      "ml_pred": 67
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 2,
+      "actual": 55,
+      "naive_pred": 63,
+      "moving_average_pred": 809,
+      "ml_pred": 55
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 3,
+      "actual": 56,
+      "naive_pred": 61,
+      "moving_average_pred": 518,
+      "ml_pred": 57
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 4,
+      "actual": 62,
+      "naive_pred": 57,
+      "moving_average_pred": 284,
+      "ml_pred": 62
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 5,
+      "actual": 66,
+      "naive_pred": 55,
+      "moving_average_pred": 59,
+      "ml_pred": 77
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 6,
+      "actual": 69,
+      "naive_pred": 56,
+      "moving_average_pred": 57,
+      "ml_pred": 79
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 7,
+      "actual": 59,
+      "naive_pred": 62,
+      "moving_average_pred": 58,
+      "ml_pred": 73
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 8,
+      "actual": 71,
+      "naive_pred": 66,
+      "moving_average_pred": 60,
+      "ml_pred": 82
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 9,
+      "actual": 68,
+      "naive_pred": 69,
+      "moving_average_pred": 63,
+      "ml_pred": 88
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 10,
+      "actual": 72,
+      "naive_pred": 59,
+      "moving_average_pred": 64,
+      "ml_pred": 95
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 11,
+      "actual": 104,
+      "naive_pred": 71,
+      "moving_average_pred": 66,
+      "ml_pred": 136
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 12,
+      "actual": 115,
+      "naive_pred": 68,
+      "moving_average_pred": 67,
+      "ml_pred": 156
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 13,
+      "actual": 85,
+      "naive_pred": 72,
+      "moving_average_pred": 68,
+      "ml_pred": 161
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 14,
+      "actual": 122,
+      "naive_pred": 104,
+      "moving_average_pred": 79,
+      "ml_pred": 172
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 15,
+      "actual": 115,
+      "naive_pred": 115,
+      "moving_average_pred": 90,
+      "ml_pred": 180
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 16,
+      "actual": 129,
+      "naive_pred": 85,
+      "moving_average_pred": 94,
+      "ml_pred": 200
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 17,
+      "actual": 129,
+      "naive_pred": 122,
+      "moving_average_pred": 106,
+      "ml_pred": 204
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 18,
+      "actual": 181,
+      "naive_pred": 115,
+      "moving_average_pred": 109,
+      "ml_pred": 238
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 19,
+      "actual": 186,
+      "naive_pred": 129,
+      "moving_average_pred": 113,
+      "ml_pred": 238
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 20,
+      "actual": 232,
+      "naive_pred": 129,
+      "moving_average_pred": 124,
+      "ml_pred": 300
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 21,
+      "actual": 240,
+      "naive_pred": 181,
+      "moving_average_pred": 138,
+      "ml_pred": 352
+    },
+    {
+      "epi_year": 2026,
+      "epi_week": 22,
+      "actual": 219,
+      "naive_pred": 186,
+      "moving_average_pred": 156,
+      "ml_pred": 426
+    }
+  ],
+  "notes": [
+    "Validation uses final chronological 20% of available feature rows.",
+    "Time-based holdout only — no random shuffling at any step.",
+    "Results are based on synthetic/demo aggregate data generated for prototype testing.",
+    "This validates pipeline behaviour and feature engineering correctness, not deployment-grade epidemiological accuracy.",
+    "Real validation would require multi-year validated DGHS/IEDCR surveillance data."
+  ]
+}

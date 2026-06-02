@@ -1,0 +1,86 @@
+{
+  "forecast_id": 1,
+  "date_generated": "2026-05-23T17:33:49",
+  "latest_known_epi_year": 2026,
+  "latest_known_epi_week": 22,
+  "target_epi_year": 2026,
+  "target_epi_week": 24,
+  "horizon_days": 14,
+  "city": "Dhaka South",
+  "forecast_cases": 234,
+  "growth_factor": 1.498,
+  "risk_score": 60,
+  "risk_level": "Moderate",
+  "model_name": "GradientBoostingRegressor",
+  "model_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "min_samples_leaf": 3,
+    "subsample": 0.8,
+    "random_state": 42
+  },
+  "features_used": [
+    "rainfall_lag_2w",
+    "rainfall_lag_4w",
+    "temp_lag_2w",
+    "temp_lag_4w",
+    "humidity_lag_2w",
+    "humidity_lag_4w",
+    "cases_lag_1w",
+    "cases_lag_2w",
+    "cases_lag_4w",
+    "cases_rolling_3w",
+    "cases_rolling_4w",
+    "cases_rolling_8w",
+    "growth_rate_1w",
+    "growth_rate_2w",
+    "epi_week_sin",
+    "epi_week_cos",
+    "monsoon_flag",
+    "post_monsoon_flag"
+  ],
+  "reference_cases_4w_rolling": 156.2,
+  "latest_observed_cases": 232,
+  "baseline_context": {
+    "naive_forecast": 186,
+    "moving_average_forecast": 156
+  },
+  "notes": [
+    "Forecast trained on all available feature rows (full data, no holdout).",
+    "Baseline forecasts use feature values from the same latest row.",
+    "Growth factor computed relative to cases_rolling_4w (4-week rolling mean).",
+    "All values are based on synthetic/demo data. Not a real operational forecast."
+  ],
+  "uncertainty_method": {
+    "type": "rmse_error_band",
+    "source": "time_based_backtest",
+    "model": "GradientBoostingRegressor",
+    "rmse": 67.8,
+    "uncertainty_pct": 29.0,
+    "note": "Prototype uncertainty band derived from validation RMSE; not a calibrated probabilistic interval."
+  },
+  "uncertainty_scenarios": {
+    "best_case": {
+      "label": "Best Case",
+      "forecast_cases": 166,
+      "growth_factor": 1.063,
+      "risk_score": 34,
+      "risk_level": "Low"
+    },
+    "expected_case": {
+      "label": "Expected Case",
+      "forecast_cases": 234,
+      "growth_factor": 1.498,
+      "risk_score": 60,
+      "risk_level": "Moderate"
+    },
+    "worst_case": {
+      "label": "Worst Case",
+      "forecast_cases": 302,
+      "growth_factor": 1.933,
+      "risk_score": 82,
+      "risk_level": "High"
+    }
+  }
+}

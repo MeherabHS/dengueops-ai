@@ -1,0 +1,56 @@
+{
+  "target": "target_cases_next_2w",
+  "horizon": "14 days (2 weeks ahead)",
+  "validation_design": "time_based_holdout_final_20_percent",
+  "train_period": {
+    "epi_year_start": 2024,
+    "epi_week_start": 6,
+    "epi_year_end": 2025,
+    "epi_week_end": 49
+  },
+  "test_period": {
+    "epi_year_start": 2025,
+    "epi_week_start": 50,
+    "epi_year_end": 2026,
+    "epi_week_end": 22
+  },
+  "best_model": "gradient_boosting",
+  "models": [
+    {
+      "model_key": "naive",
+      "model_name": "Naive Baseline",
+      "role": "Predicts next value = last observed value. Establishes the minimum bar any model must exceed.",
+      "is_selected": false,
+      "mae": 148.96,
+      "rmse": 351.47,
+      "mape": 214.31
+    },
+    {
+      "model_key": "moving_average",
+      "model_name": "Moving Average Baseline (4-week)",
+      "role": "Predicts next value = rolling 4-week mean. Tests whether trend smoothing adds value over naive.",
+      "is_selected": false,
+      "mae": 223.66,
+      "rmse": 422.5,
+      "mape": 337.38
+    },
+    {
+      "model_key": "gradient_boosting",
+      "model_name": "Gradient Boosting Regressor (scikit-learn)",
+      "role": "Selected tabular ML model. Trained on lag features, rolling statistics, and seasonal encodings.",
+      "is_selected": true,
+      "mae": 46.96,
+      "rmse": 67.8,
+      "mape": 40.52
+    }
+  ],
+  "selection_explanation": "GradientBoostingRegressor was selected because it achieved the lowest MAE (47.0) and RMSE under chronological time-based validation — 68.5% lower MAE than the Naive baseline. The project does not claim algorithmic novelty; the model is used as a practical forecasting component in a decision-support prototype.",
+  "leakage_prevention": "All features use shift(1) before rolling windows. Target columns are excluded from training features. Train/test split is strictly chronological.",
+  "notes": [
+    "Validation uses final chronological 20% of available feature rows.",
+    "Time-based holdout only — no random shuffling at any step.",
+    "Results are based on synthetic/demo aggregate data generated for prototype testing.",
+    "This validates pipeline behaviour and feature engineering correctness, not deployment-grade epidemiological accuracy.",
+    "Real validation would require multi-year validated DGHS/IEDCR surveillance data."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "run_timestamp": "2026-05-23T17:33:41",
+  "status": "success",
+  "completed_steps": [
+    "generate_demo_data",
+    "feature_engineering",
+    "validation_backtest",
+    "forecast_model",
+    "uncertainty_engine",
+    "operational_engine",
+    "dashboard_exporter"
+  ],
+  "step_timings_sec": {
+    "generate_demo_data": 1.0,
+    "feature_engineering": 1.36,
+    "validation_backtest": 2.78,
+    "forecast_model": 3.18,
+    "uncertainty_engine": 2.67,
+    "operational_engine": 0.12,
+    "dashboard_exporter": 1.99
+  },
+  "generated_files": [
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\dengue_cases.csv",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\climate_data.csv",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\model_features.csv",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\validation_metrics.json",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\forecast_output.json",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\directives.json",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\dashboard_summary.json",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\model_comparison.json",
+    "C:\\Users\\Asus\\OneDrive\\Desktop\\dengueops\\dengueops-ai\\data\\chart_data.json"
+  ],
+  "forecast_summary": {
+    "forecast_cases": 234,
+    "growth_factor": 1.498,
+    "risk_level": "Moderate",
+    "risk_score": 60,
+    "target_epi_week": 24,
+    "target_epi_year": 2026,
+    "best_case": 166,
+    "expected_case": 234,
+    "worst_case": 302
+  },
+  "directives_summary": {
+    "total_facilities": 11,
+    "total_public_government_anchors": 5,
+    "critical_priority_zones": 5,
+    "facilities_with_expected_bed_gap": 5,
+    "facilities_with_worst_case_bed_gap": 8,
+    "critical_supply_alerts": 0,
+    "highest_priority_zone": "Kamrangirchar",
+    "highest_pressure_facility": "Kamrangirchar 31-Bed Hospital",
+    "total_recommendations": 31
+  },
+  "dashboard_outputs": {
+    "dashboard_summary.json": {
+      "exists": true,
+      "size_bytes": 3475
+    },
+    "model_comparison.json": {
+      "exists": true,
+      "size_bytes": 2394
+    },
+    "chart_data.json": {
+      "exists": true,
+      "size_bytes": 21317
+    }
+  },
+  "notes": [
+    "Python pipeline generates dashboard-ready JSON outputs.",
+    "Evaluators do not need to inspect terminal outputs.",
+    "The Next.js dashboard visualises forecasts, validation metrics, uncertainty, SDH, bed gaps, and zone/facility directives.",
+    "All readiness and inventory values are synthetic demonstration data.",
+    "Real facility names are used as public-sector anchor profiles only."
+  ]
+}

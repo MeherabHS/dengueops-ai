@@ -1,0 +1,178 @@
+[
+  {
+    "inventory_id": "INV-F01-NS1",
+    "facility_id": "F01",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 78,
+    "baseline_daily_consumption": 7,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F01-IVF",
+    "facility_id": "F01",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 195,
+    "baseline_daily_consumption": 16,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F02-NS1",
+    "facility_id": "F02",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 42,
+    "baseline_daily_consumption": 4,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F02-IVF",
+    "facility_id": "F02",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 105,
+    "baseline_daily_consumption": 9,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F03-NS1",
+    "facility_id": "F03",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 310,
+    "baseline_daily_consumption": 22,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F03-IVF",
+    "facility_id": "F03",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 720,
+    "baseline_daily_consumption": 56,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F04-NS1",
+    "facility_id": "F04",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 400,
+    "baseline_daily_consumption": 28,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F04-IVF",
+    "facility_id": "F04",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 900,
+    "baseline_daily_consumption": 70,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F05-NS1",
+    "facility_id": "F05",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 65,
+    "baseline_daily_consumption": 6,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F05-IVF",
+    "facility_id": "F05",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 160,
+    "baseline_daily_consumption": 13,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F06-NS1",
+    "facility_id": "F06",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 38,
+    "baseline_daily_consumption": 4,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F06-IVF",
+    "facility_id": "F06",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 90,
+    "baseline_daily_consumption": 8,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F07-NS1",
+    "facility_id": "F07",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 62,
+    "baseline_daily_consumption": 5,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F07-IVF",
+    "facility_id": "F07",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 145,
+    "baseline_daily_consumption": 11,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F08-NS1",
+    "facility_id": "F08",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 250,
+    "baseline_daily_consumption": 18,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F08-IVF",
+    "facility_id": "F08",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 560,
+    "baseline_daily_consumption": 44,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F09-NS1",
+    "facility_id": "F09",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 140,
+    "baseline_daily_consumption": 10,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F09-IVF",
+    "facility_id": "F09",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 340,
+    "baseline_daily_consumption": 28,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F10-NS1",
+    "facility_id": "F10",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 92,
+    "baseline_daily_consumption": 8,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F10-IVF",
+    "facility_id": "F10",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 210,
+    "baseline_daily_consumption": 17,
+    "reorder_threshold_days": 5
+  },
+  {
+    "inventory_id": "INV-F11-NS1",
+    "facility_id": "F11",
+    "item_name": "NS1/RDT Kit",
+    "current_stock": 82,
+    "baseline_daily_consumption": 7,
+    "reorder_threshold_days": 7
+  },
+  {
+    "inventory_id": "INV-F11-IVF",
+    "facility_id": "F11",
+    "item_name": "IV Fluid (500ml)",
+    "current_stock": 190,
+    "baseline_daily_consumption": 16,
+    "reorder_threshold_days": 5
+  }
+]

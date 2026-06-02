@@ -1,0 +1,830 @@
+{
+  "generated_at": "2026-05-23T17:36:51",
+  "actual_vs_predicted": [
+    {
+      "label": "2025-W50",
+      "actual": 954,
+      "naive": 1143,
+      "moving_average": 1159,
+      "gradient_boosting": 952
+    },
+    {
+      "label": "2025-W51",
+      "actual": 63,
+      "naive": 1225,
+      "moving_average": 1203,
+      "gradient_boosting": 209
+    },
+    {
+      "label": "2025-W52",
+      "actual": 61,
+      "naive": 993,
+      "moving_average": 1157,
+      "gradient_boosting": 82
+    },
+    {
+      "label": "2026-W01",
+      "actual": 57,
+      "naive": 954,
+      "moving_average": 1079,
+      "gradient_boosting": 67
+    },
+    {
+      "label": "2026-W02",
+      "actual": 55,
+      "naive": 63,
+      "moving_average": 809,
+      "gradient_boosting": 55
+    },
+    {
+      "label": "2026-W03",
+      "actual": 56,
+      "naive": 61,
+      "moving_average": 518,
+      "gradient_boosting": 57
+    },
+    {
+      "label": "2026-W04",
+      "actual": 62,
+      "naive": 57,
+      "moving_average": 284,
+      "gradient_boosting": 62
+    },
+    {
+      "label": "2026-W05",
+      "actual": 66,
+      "naive": 55,
+      "moving_average": 59,
+      "gradient_boosting": 77
+    },
+    {
+      "label": "2026-W06",
+      "actual": 69,
+      "naive": 56,
+      "moving_average": 57,
+      "gradient_boosting": 79
+    },
+    {
+      "label": "2026-W07",
+      "actual": 59,
+      "naive": 62,
+      "moving_average": 58,
+      "gradient_boosting": 73
+    },
+    {
+      "label": "2026-W08",
+      "actual": 71,
+      "naive": 66,
+      "moving_average": 60,
+      "gradient_boosting": 82
+    },
+    {
+      "label": "2026-W09",
+      "actual": 68,
+      "naive": 69,
+      "moving_average": 63,
+      "gradient_boosting": 88
+    },
+    {
+      "label": "2026-W10",
+      "actual": 72,
+      "naive": 59,
+      "moving_average": 64,
+      "gradient_boosting": 95
+    },
+    {
+      "label": "2026-W11",
+      "actual": 104,
+      "naive": 71,
+      "moving_average": 66,
+      "gradient_boosting": 136
+    },
+    {
+      "label": "2026-W12",
+      "actual": 115,
+      "naive": 68,
+      "moving_average": 67,
+      "gradient_boosting": 156
+    },
+    {
+      "label": "2026-W13",
+      "actual": 85,
+      "naive": 72,
+      "moving_average": 68,
+      "gradient_boosting": 161
+    },
+    {
+      "label": "2026-W14",
+      "actual": 122,
+      "naive": 104,
+      "moving_average": 79,
+      "gradient_boosting": 172
+    },
+    {
+      "label": "2026-W15",
+      "actual": 115,
+      "naive": 115,
+      "moving_average": 90,
+      "gradient_boosting": 180
+    },
+    {
+      "label": "2026-W16",
+      "actual": 129,
+      "naive": 85,
+      "moving_average": 94,
+      "gradient_boosting": 200
+    },
+    {
+      "label": "2026-W17",
+      "actual": 129,
+      "naive": 122,
+      "moving_average": 106,
+      "gradient_boosting": 204
+    },
+    {
+      "label": "2026-W18",
+      "actual": 181,
+      "naive": 115,
+      "moving_average": 109,
+      "gradient_boosting": 238
+    },
+    {
+      "label": "2026-W19",
+      "actual": 186,
+      "naive": 129,
+      "moving_average": 113,
+      "gradient_boosting": 238
+    },
+    {
+      "label": "2026-W20",
+      "actual": 232,
+      "naive": 129,
+      "moving_average": 124,
+      "gradient_boosting": 300
+    },
+    {
+      "label": "2026-W21",
+      "actual": 240,
+      "naive": 181,
+      "moving_average": 138,
+      "gradient_boosting": 352
+    },
+    {
+      "label": "2026-W22",
+      "actual": 219,
+      "naive": 186,
+      "moving_average": 156,
+      "gradient_boosting": 426
+    }
+  ],
+  "model_error_bars": [
+    {
+      "model": "Naive Baseline",
+      "mae": 149.0,
+      "rmse": 351.5
+    },
+    {
+      "model": "Moving Average Baseline (4-week)",
+      "mae": 223.7,
+      "rmse": 422.5
+    },
+    {
+      "model": "Gradient Boosting Regressor (scikit-learn)",
+      "mae": 47.0,
+      "rmse": 67.8
+    }
+  ],
+  "uncertainty_scenarios": [
+    {
+      "scenario": "Best Case",
+      "forecast_cases": 166,
+      "growth_factor": 1.063,
+      "risk_score": 34,
+      "risk_level": "Low"
+    },
+    {
+      "scenario": "Expected Case",
+      "forecast_cases": 234,
+      "growth_factor": 1.498,
+      "risk_score": 60,
+      "risk_level": "Moderate"
+    },
+    {
+      "scenario": "Worst Case",
+      "forecast_cases": 302,
+      "growth_factor": 1.933,
+      "risk_score": 82,
+      "risk_level": "High"
+    }
+  ],
+  "zone_priority": [
+    {
+      "zone_name": "Kamrangirchar",
+      "priority_score": 81,
+      "allocated_cases": 50.9,
+      "risk_category": "Critical"
+    },
+    {
+      "zone_name": "Mitford / Old Dhaka",
+      "priority_score": 72,
+      "allocated_cases": 49.1,
+      "risk_category": "High"
+    },
+    {
+      "zone_name": "Jatrabari / Sayedabad",
+      "priority_score": 66,
+      "allocated_cases": 46.6,
+      "risk_category": "High"
+    },
+    {
+      "zone_name": "Lalbagh / Hazaribagh",
+      "priority_score": 65,
+      "allocated_cases": 45.2,
+      "risk_category": "High"
+    },
+    {
+      "zone_name": "Dhanmondi",
+      "priority_score": 57,
+      "allocated_cases": 42.2,
+      "risk_category": "High"
+    }
+  ],
+  "supply_depletion": [
+    {
+      "facility_name": "National Institute of Burn and Plastic Surgery",
+      "facility_id": "F06",
+      "zone_name": "Dhanmondi",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 8.9,
+      "sdh_expected": 6.3,
+      "sdh_worst": 4.9,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Kamrangirchar Urban Health Response Unit",
+      "facility_id": "F02",
+      "zone_name": "Kamrangirchar",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 9.9,
+      "sdh_expected": 7.0,
+      "sdh_worst": 5.4,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Old Dhaka Dengue Triage Extension Unit",
+      "facility_id": "F05",
+      "zone_name": "Mitford / Old Dhaka",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 10.2,
+      "sdh_expected": 7.2,
+      "sdh_worst": 5.6,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Kamrangirchar 31-Bed Hospital",
+      "facility_id": "F01",
+      "zone_name": "Kamrangirchar",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 10.5,
+      "sdh_expected": 7.4,
+      "sdh_worst": 5.8,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "National Institute of Burn and Plastic Surgery",
+      "facility_id": "F06",
+      "zone_name": "Dhanmondi",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 10.6,
+      "sdh_expected": 7.5,
+      "sdh_worst": 5.8,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Lalbagh Urban Health Response Unit",
+      "facility_id": "F10",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 10.8,
+      "sdh_expected": 7.7,
+      "sdh_worst": 5.9,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Kamrangirchar Urban Health Response Unit",
+      "facility_id": "F02",
+      "zone_name": "Kamrangirchar",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 11.0,
+      "sdh_expected": 7.8,
+      "sdh_worst": 6.0,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Hazaribagh Urban Health Response Unit",
+      "facility_id": "F11",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 11.0,
+      "sdh_expected": 7.8,
+      "sdh_worst": 6.1,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Hazaribagh Urban Health Response Unit",
+      "facility_id": "F11",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 11.2,
+      "sdh_expected": 7.9,
+      "sdh_worst": 6.1,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Kamrangirchar 31-Bed Hospital",
+      "facility_id": "F01",
+      "zone_name": "Kamrangirchar",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 11.5,
+      "sdh_expected": 8.1,
+      "sdh_worst": 6.3,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Jatrabari-Sayedabad Public Health Response Unit",
+      "facility_id": "F09",
+      "zone_name": "Jatrabari / Sayedabad",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 11.4,
+      "sdh_expected": 8.1,
+      "sdh_worst": 6.3,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Old Dhaka Dengue Triage Extension Unit",
+      "facility_id": "F05",
+      "zone_name": "Mitford / Old Dhaka",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 11.6,
+      "sdh_expected": 8.2,
+      "sdh_worst": 6.4,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Lalbagh Urban Health Response Unit",
+      "facility_id": "F10",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 11.6,
+      "sdh_expected": 8.2,
+      "sdh_worst": 6.4,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Dhanmondi Diagnostic Support Unit",
+      "facility_id": "F07",
+      "zone_name": "Dhanmondi",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 11.7,
+      "sdh_expected": 8.3,
+      "sdh_worst": 6.4,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Mugda Medical College Hospital",
+      "facility_id": "F08",
+      "zone_name": "Jatrabari / Sayedabad",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 12.0,
+      "sdh_expected": 8.5,
+      "sdh_worst": 6.6,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Sir Salimullah Medical College & Mitford Hospital",
+      "facility_id": "F03",
+      "zone_name": "Mitford / Old Dhaka",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 12.1,
+      "sdh_expected": 8.6,
+      "sdh_worst": 6.7,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Dhaka Medical College Hospital",
+      "facility_id": "F04",
+      "zone_name": "Mitford / Old Dhaka",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 12.1,
+      "sdh_expected": 8.6,
+      "sdh_worst": 6.7,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Dhanmondi Diagnostic Support Unit",
+      "facility_id": "F07",
+      "zone_name": "Dhanmondi",
+      "item_name": "IV Fluid (500ml)",
+      "sdh_best": 12.4,
+      "sdh_expected": 8.8,
+      "sdh_worst": 6.8,
+      "threshold_days": 5
+    },
+    {
+      "facility_name": "Mugda Medical College Hospital",
+      "facility_id": "F08",
+      "zone_name": "Jatrabari / Sayedabad",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 13.1,
+      "sdh_expected": 9.3,
+      "sdh_worst": 7.2,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Jatrabari-Sayedabad Public Health Response Unit",
+      "facility_id": "F09",
+      "zone_name": "Jatrabari / Sayedabad",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 13.2,
+      "sdh_expected": 9.3,
+      "sdh_worst": 7.2,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Sir Salimullah Medical College & Mitford Hospital",
+      "facility_id": "F03",
+      "zone_name": "Mitford / Old Dhaka",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 13.3,
+      "sdh_expected": 9.4,
+      "sdh_worst": 7.3,
+      "threshold_days": 7
+    },
+    {
+      "facility_name": "Dhaka Medical College Hospital",
+      "facility_id": "F04",
+      "zone_name": "Mitford / Old Dhaka",
+      "item_name": "NS1/RDT Kit",
+      "sdh_best": 13.4,
+      "sdh_expected": 9.5,
+      "sdh_worst": 7.4,
+      "threshold_days": 7
+    }
+  ],
+  "bed_gap": [
+    {
+      "facility_name": "Kamrangirchar 31-Bed Hospital",
+      "facility_id": "F01",
+      "zone_name": "Kamrangirchar",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 3.7,
+      "bed_gap_expected": 6.9,
+      "bed_gap_worst": 10.1
+    },
+    {
+      "facility_name": "Lalbagh Urban Health Response Unit",
+      "facility_id": "F10",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 1.8,
+      "bed_gap_worst": 3.7
+    },
+    {
+      "facility_name": "Hazaribagh Urban Health Response Unit",
+      "facility_id": "F11",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 1.5,
+      "bed_gap_worst": 3.3
+    },
+    {
+      "facility_name": "Dhanmondi Diagnostic Support Unit",
+      "facility_id": "F07",
+      "zone_name": "Dhanmondi",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 1.0,
+      "bed_gap_worst": 2.8
+    },
+    {
+      "facility_name": "Kamrangirchar Urban Health Response Unit",
+      "facility_id": "F02",
+      "zone_name": "Kamrangirchar",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 0.6,
+      "bed_gap_worst": 1.7
+    },
+    {
+      "facility_name": "Sir Salimullah Medical College & Mitford Hospital",
+      "facility_id": "F03",
+      "zone_name": "Mitford / Old Dhaka",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 0.0,
+      "bed_gap_worst": 0.0
+    },
+    {
+      "facility_name": "Dhaka Medical College Hospital",
+      "facility_id": "F04",
+      "zone_name": "Mitford / Old Dhaka",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 0.0,
+      "bed_gap_worst": 0.0
+    },
+    {
+      "facility_name": "Old Dhaka Dengue Triage Extension Unit",
+      "facility_id": "F05",
+      "zone_name": "Mitford / Old Dhaka",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 0.0,
+      "bed_gap_worst": 0.0
+    },
+    {
+      "facility_name": "National Institute of Burn and Plastic Surgery",
+      "facility_id": "F06",
+      "zone_name": "Dhanmondi",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 0.0,
+      "bed_gap_worst": 0.7
+    },
+    {
+      "facility_name": "Mugda Medical College Hospital",
+      "facility_id": "F08",
+      "zone_name": "Jatrabari / Sayedabad",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 0.0,
+      "bed_gap_worst": 0.4
+    },
+    {
+      "facility_name": "Jatrabari-Sayedabad Public Health Response Unit",
+      "facility_id": "F09",
+      "zone_name": "Jatrabari / Sayedabad",
+      "total_beds": 0,
+      "occupied_beds": 0,
+      "bed_gap_best": 0.0,
+      "bed_gap_expected": 0.0,
+      "bed_gap_worst": 0.8
+    }
+  ],
+  "facility_pressure": [
+    {
+      "facility_name": "Dhaka Medical College Hospital",
+      "facility_id": "F04",
+      "zone_name": "Mitford / Old Dhaka",
+      "priority_score": 72,
+      "total_beds": 0,
+      "projected_bed_load_expected": 86.9,
+      "projected_bed_load_worst": 89.5,
+      "facility_anchor_type": "real_public_hospital_anchor"
+    },
+    {
+      "facility_name": "Sir Salimullah Medical College & Mitford Hospital",
+      "facility_id": "F03",
+      "zone_name": "Mitford / Old Dhaka",
+      "priority_score": 72,
+      "total_beds": 0,
+      "projected_bed_load_expected": 70.0,
+      "projected_bed_load_worst": 72.0,
+      "facility_anchor_type": "real_public_hospital_anchor"
+    },
+    {
+      "facility_name": "Mugda Medical College Hospital",
+      "facility_id": "F08",
+      "zone_name": "Jatrabari / Sayedabad",
+      "priority_score": 66,
+      "total_beds": 0,
+      "projected_bed_load_expected": 52.4,
+      "projected_bed_load_worst": 55.4,
+      "facility_anchor_type": "real_public_hospital_anchor"
+    },
+    {
+      "facility_name": "Kamrangirchar 31-Bed Hospital",
+      "facility_id": "F01",
+      "zone_name": "Kamrangirchar",
+      "priority_score": 81,
+      "total_beds": 0,
+      "projected_bed_load_expected": 26.9,
+      "projected_bed_load_worst": 30.1,
+      "facility_anchor_type": "real_public_hospital_anchor"
+    },
+    {
+      "facility_name": "Jatrabari-Sayedabad Public Health Response Unit",
+      "facility_id": "F09",
+      "zone_name": "Jatrabari / Sayedabad",
+      "priority_score": 66,
+      "total_beds": 0,
+      "projected_bed_load_expected": 24.2,
+      "projected_bed_load_worst": 25.8,
+      "facility_anchor_type": "synthetic_local_response_unit"
+    },
+    {
+      "facility_name": "Lalbagh Urban Health Response Unit",
+      "facility_id": "F10",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "priority_score": 65,
+      "total_beds": 0,
+      "projected_bed_load_expected": 19.8,
+      "projected_bed_load_worst": 21.7,
+      "facility_anchor_type": "synthetic_local_response_unit"
+    },
+    {
+      "facility_name": "Hazaribagh Urban Health Response Unit",
+      "facility_id": "F11",
+      "zone_name": "Lalbagh / Hazaribagh",
+      "priority_score": 65,
+      "total_beds": 0,
+      "projected_bed_load_expected": 17.5,
+      "projected_bed_load_worst": 19.3,
+      "facility_anchor_type": "synthetic_local_response_unit"
+    },
+    {
+      "facility_name": "National Institute of Burn and Plastic Surgery",
+      "facility_id": "F06",
+      "zone_name": "Dhanmondi",
+      "priority_score": 57,
+      "total_beds": 0,
+      "projected_bed_load_expected": 14.2,
+      "projected_bed_load_worst": 15.7,
+      "facility_anchor_type": "real_public_hospital_anchor"
+    },
+    {
+      "facility_name": "Old Dhaka Dengue Triage Extension Unit",
+      "facility_id": "F05",
+      "zone_name": "Mitford / Old Dhaka",
+      "priority_score": 72,
+      "total_beds": 0,
+      "projected_bed_load_expected": 13.4,
+      "projected_bed_load_worst": 13.8,
+      "facility_anchor_type": "synthetic_local_response_unit"
+    },
+    {
+      "facility_name": "Dhanmondi Diagnostic Support Unit",
+      "facility_id": "F07",
+      "zone_name": "Dhanmondi",
+      "priority_score": 57,
+      "total_beds": 0,
+      "projected_bed_load_expected": 13.0,
+      "projected_bed_load_worst": 14.8,
+      "facility_anchor_type": "synthetic_local_response_unit"
+    },
+    {
+      "facility_name": "Kamrangirchar Urban Health Response Unit",
+      "facility_id": "F02",
+      "zone_name": "Kamrangirchar",
+      "priority_score": 81,
+      "total_beds": 0,
+      "projected_bed_load_expected": 8.6,
+      "projected_bed_load_worst": 9.7,
+      "facility_anchor_type": "synthetic_local_response_unit"
+    }
+  ],
+  "case_trend": [
+    {
+      "label": "2025-W51",
+      "cases": 993,
+      "rainfall_mm": 6.4
+    },
+    {
+      "label": "2025-W52",
+      "cases": 954,
+      "rainfall_mm": 5.3
+    },
+    {
+      "label": "2026-W01",
+      "cases": 63,
+      "rainfall_mm": 3.4
+    },
+    {
+      "label": "2026-W02",
+      "cases": 61,
+      "rainfall_mm": 4.1
+    },
+    {
+      "label": "2026-W03",
+      "cases": 57,
+      "rainfall_mm": 4.3
+    },
+    {
+      "label": "2026-W04",
+      "cases": 55,
+      "rainfall_mm": 3.7
+    },
+    {
+      "label": "2026-W05",
+      "cases": 56,
+      "rainfall_mm": 6.5
+    },
+    {
+      "label": "2026-W06",
+      "cases": 62,
+      "rainfall_mm": 6.6
+    },
+    {
+      "label": "2026-W07",
+      "cases": 66,
+      "rainfall_mm": 5.7
+    },
+    {
+      "label": "2026-W08",
+      "cases": 69,
+      "rainfall_mm": 6.5
+    },
+    {
+      "label": "2026-W09",
+      "cases": 59,
+      "rainfall_mm": 8.3
+    },
+    {
+      "label": "2026-W10",
+      "cases": 71,
+      "rainfall_mm": 10.6
+    },
+    {
+      "label": "2026-W11",
+      "cases": 68,
+      "rainfall_mm": 10.6
+    },
+    {
+      "label": "2026-W12",
+      "cases": 72,
+      "rainfall_mm": 12.6
+    },
+    {
+      "label": "2026-W13",
+      "cases": 104,
+      "rainfall_mm": 15.8
+    },
+    {
+      "label": "2026-W14",
+      "cases": 115,
+      "rainfall_mm": 29.6
+    },
+    {
+      "label": "2026-W15",
+      "cases": 85,
+      "rainfall_mm": 36.2
+    },
+    {
+      "label": "2026-W16",
+      "cases": 122,
+      "rainfall_mm": 46.8
+    },
+    {
+      "label": "2026-W17",
+      "cases": 115,
+      "rainfall_mm": 56.8
+    },
+    {
+      "label": "2026-W18",
+      "cases": 129,
+      "rainfall_mm": 57.2
+    },
+    {
+      "label": "2026-W19",
+      "cases": 129,
+      "rainfall_mm": 61.7
+    },
+    {
+      "label": "2026-W20",
+      "cases": 181,
+      "rainfall_mm": 52.4
+    },
+    {
+      "label": "2026-W21",
+      "cases": 186,
+      "rainfall_mm": 63.2
+    },
+    {
+      "label": "2026-W22",
+      "cases": 232,
+      "rainfall_mm": 71.3
+    },
+    {
+      "label": "2026-W23",
+      "cases": 240,
+      "rainfall_mm": 83.4
+    },
+    {
+      "label": "2026-W24",
+      "cases": 219,
+      "rainfall_mm": 56.6
+    }
+  ]
+}
