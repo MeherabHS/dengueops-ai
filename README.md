@@ -1,3 +1,5 @@
+> **This is an earlier version of DengueOps AI.** Active development continues in [dengueops-ai-new](https://github.com/MeherabHS/dengueops-ai-new).
+
 # DengueOps AI
 
 ### Simulation-Based Dengue Surge Preparedness Decision Support for Dhaka South
